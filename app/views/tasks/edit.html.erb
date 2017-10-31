@@ -1,0 +1,7 @@
+<h1>Edit task</h1>
+
+<%= form_for(@task) do |t| %>
+  <%= t.text_field :name, placeholder: "Enter the task name" %>
+  <%= t.text_field :details, placeholder: "Enter the task details" %>
+  <%= t.submit %>
+<% end %>
